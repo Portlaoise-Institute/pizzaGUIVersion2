@@ -475,10 +475,8 @@ public class PizzaProgram extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // Open Summary Window
         summaryWindow.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void summaryWindowWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_summaryWindowWindowOpened
-        //Set controls in summary window with pizza order details 
+        
+         //Set controls in summary window with pizza order details 
         
         pizzaBaseLbl.setText(myPizza.getPizzaBase());
         
@@ -487,6 +485,11 @@ public class PizzaProgram extends javax.swing.JFrame {
         NumberFormat nf = NumberFormat.getCurrencyInstance();
         
         pizzaPriceLbl.setText(String.valueOf(nf.format(myPizza.getPrice())));
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void summaryWindowWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_summaryWindowWindowOpened
+       
     }//GEN-LAST:event_summaryWindowWindowOpened
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
